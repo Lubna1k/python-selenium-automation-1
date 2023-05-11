@@ -16,9 +16,10 @@ driver.maximize_window()
 driver.get('https://www.amazon.com/')
 
 driver.find_element(By.ID, 'nav-orders').click()
-
-#email
-driver.find_element(By.ID, "ap_email")
+expected_text = 'Sign in'
+actual_text = driver.find_element(By.CLASS_NAME, "a-spacing-small")
+expected_text = 'email or phone'
+actual_result = driver.find_element(By.ID, "ap_email")
 driver.find_element(By.CLASS_NAME, 'a-expander-prompt')
 #CONTINUE BUTTON
 driver.find_element(By.CLASS_NAME, 'a-button-input')
