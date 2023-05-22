@@ -1,0 +1,95 @@
+
+<!-- saved from url=(0125)http://localhost:63342/python-selenium-automation-1/CSS_HTML-1.html?_ijt=na7fer7jlgb8n7vfht9ghne6ou&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Apple Pie</title>
+</head>
+<body class="expansion-alids-init" data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+<h1>How to make Apple Pie</h1>
+    <div>
+        <h2>Ingredients</h2>
+        <table>
+            <tbody><tr><td> <img src="./Apple Pie hw_files/pie.JPG"></td>
+            
+            <td>
+
+                <ul>
+                    <li>Pastry for a 9” Double Crust Pie (store bought or homemade)</li>
+                    <li>1 jar Stonewall Kitchen Apple Pie Jam</li>
+                    <li>¼ cup milk</li>
+                    <li>2-3 Tablespoons granulated sugar</li>
+                </ul>
+            </td>
+        </tr></tbody></table>
+    </div>
+
+    <div>
+        <h3>Instructions</h3>
+        <ol>
+            <li>Preheat oven to 400°F. Line 2 baking sheets with parchment paper or silicon baking mats.</li>
+            <li>Roll the pie pastry to be approximately 1/9” thick.  Using a large apple shaped cookie cutter (or a 4 ½” biscuit cutter), cut out shapes and transfer to the prepared baking sheets.  Continue to roll out dough and cut until all dough has been used. </li>
+            <li>Spoon approximately 3 tablespoons of Apple Pie Jam into the center of half of the cut outs, leaving the remaining half to place on top. </li>
+            <li>Lightly brush milk around the outer edges surrounding the jam and gently place the remaining cut outs on top, lining up the edges.  Use the tines of a fork, firmly press down all around the edges of each hand pie to ensure they are held together during baking.</li>
+            <li>Brush the tops of the hand pies with the remaining milk and sprinkle with sugar.</li>
+            <li>Bake for 25 minutes, or until crusts have become a golden brown.  Remove from oven and allow to cool for 5 minutes on the baking sheet before moving them to a cooling rack.</li>
+        </ol>
+    </div>
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
