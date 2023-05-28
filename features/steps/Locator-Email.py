@@ -16,7 +16,7 @@ driver.maximize_window()
 driver.get('https://www.amazon.com/')
 
 driver.find_element(By.ID, 'nav-orders').click()
-expected_text = 'Sign in'
+expected_text: str = 'Sign in'
 actual_text = driver.find_element(By.CLASS_NAME, "a-spacing-small")
 expected_text = 'email or phone'
 actual_result = driver.find_element(By.ID, "ap_email")

@@ -38,5 +38,6 @@ driver.find_element(By.CSS_SELECTOR, 'ap-other-signin-issues-link')
 driver.find_element(By.CSS_SELECTOR, 'createAccountSubmit')
 #conditions of use link
 driver.find_element(By.CSS_SELECTOR, "a*[href='condition_of_use']")
+driver.find_element(By.ID, "legalTextRow")
 #privacy notice link
 driver.find_element(By.CSS_SELECTOR, "a[href*='notification_privacy_notice']").click()

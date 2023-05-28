@@ -6,7 +6,7 @@ ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, "#add-to-cart-button")
 OPEN_CART = (By.CSS_SELECTOR, '#nav-cart')
 PROCEED_TO_CHECKOUT_BUTTON = (By.XPATH, "//input[@name='proceedToRetailCheckout']")
 NAVIGATION_CART_COUNT = (By.CSS_SELECTOR, '#nav-cart-count')
-@when('click on Add to cart button')
+
 def click_on_add_to_cart_button(context):
     context.driver.find_element(*ADD_TO_CART_BUTTON).click()
     sleep(4)

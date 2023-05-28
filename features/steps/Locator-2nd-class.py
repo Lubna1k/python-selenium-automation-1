@@ -17,14 +17,6 @@ driver.get('https://www.amazon.com/')
 
 driver.find_element(By.ID, 'nav-orders').click()
 
-#Amazon logo
-#driver.find_element(By.CLASS_NAME, "a-icon a-icon-logo")
-#driver.find_element(By.XPATH, "//input[@aria-label='Amazon logo']")
-#SIGN IN
-#driver.find_element(By.CLASS_NAME, "a-spacing-small")
-#Continue button
-#driver.find_element(By.CLASS_NAME, 'a-icon a-icon-logo')
-
 # Amazon Logo
 driver.find_elements(By.XPATH, "//a[@href='/ref=ap_frn_logo']")
 

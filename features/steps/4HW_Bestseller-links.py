@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
+from behave import given
+from behave import then
 
 # get the path to the ChromeDriver executable
 driver_path = ChromeDriverManager().install()
@@ -18,7 +20,7 @@ BS_FIVE_CATEGORIES = (By.XPATH, "//a[contains(@href, 'ref=zg_bs_tab')]")
 BESTSELLERS_CATEGORIES_BAR = (By.CSS_SELECTOR, "div._p13n-zg-nav-tab-all_style_zg-tabs__EYPLq")
 
 
-@given('Open Amazon Best seller links')
+@given('Open Amazon Best seller')
 def open_best_sellers_page(context):
     context.driver.get('https://www.amazon.com/gp/bestsellers/?ref_=nav_cs_bestsellers')
     sleep(4)
@@ -41,3 +43,4 @@ def verify_five_links_count(context, expected_amounts):
     # asserting that the count of footer links is equal
     assert len(
         bestsellers_links) == expected_amounts, f'Expected {expected_amounts} links, but got {len(bestsellers_links)}'
+
