@@ -1,6 +1,7 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
-
+#from common_steps import step_given_amazon_homepage, step_when_search_for, step_store_product_name,\
+   # step_when_click_on_item
 
 AVAILABLE_COLORS = (By.CSS_SELECTOR, "#variation_color_name li")
 CURRENT_COLOR = (By.CSS_SELECTOR, "#variation_color_name .selection")
