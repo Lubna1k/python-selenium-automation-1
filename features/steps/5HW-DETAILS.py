@@ -11,6 +11,7 @@ PRODUCTS = (By.CSS_SELECTOR, "[data-component-type='s-search-result']")
 
 @then("verify products have picture and name")
 def step_verify_products(context):
+
     products = context.driver.find_elements(*PRODUCTS)
     verification_results = []
 

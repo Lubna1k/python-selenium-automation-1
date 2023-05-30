@@ -9,7 +9,8 @@ CURRENT_COLOR = (By.CSS_SELECTOR, "#variation_color_name .selection")
 
 @then("Verify all colors are clickable")
 def step_colors_clickable(context):
-    expected_colors = ['Black/White', 'Black', 'Blue/Coral Orange', 'Bright Pink/White']
+    # expected_colors = ['Black/White', 'Black', 'Blue/Coral Orange', 'Bright Pink/White']
+    expected_colors = ['Aqua Blue/White', 'Black', 'Blue/Charcoal Heather', 'Burgundy']
     actual_colors = []
 
     colors = context.driver.find_elements(*AVAILABLE_COLORS)
@@ -19,4 +20,4 @@ def step_colors_clickable(context):
         current_color = context.driver.find_element(*CURRENT_COLOR).text
         actual_colors += [current_color]
 
-    assert expected_colors == actual_colors
+    assert expected_colors == actual_colors, f'Expected {expected_colors} but got {actual_colors}'

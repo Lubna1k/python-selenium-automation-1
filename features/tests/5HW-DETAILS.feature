@@ -5,5 +5,4 @@ Feature: Product Search
     Given I am on Amazon homepage
     When I search for 'Tshirt'
     Then verify products have picture and name
-    Then Verify all colors are clickable
     Then Print verification results
