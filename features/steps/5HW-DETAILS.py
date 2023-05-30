@@ -2,7 +2,7 @@ from email.mime import image
 
 from behave import given, when, then
 from selenium.webdriver.common.by import By
-
+#from common_steps import step_given_amazon_homepage, step_when_search_for
 
 PRODUCT_IMAGE = (By.XPATH, "//div[@data-component-type='s-search-result']//img")
 PRODUCT_NAME = (By.XPATH, "//div[@data-component-type='s-search-result']//h2/a/span")
@@ -21,7 +21,7 @@ def step_verify_products(context):
         result = {
             'product_name': product_name.text,
             'has_image': product_image.is_displayed(),
-            'has_name': product_name.text != "T Shirt"
+            'has_name': product_name.text != ""
         }
 
         verification_results.append(result)
@@ -42,19 +42,3 @@ def step_print_verification_results(context):
         print(f"Product Name: {product_name}")
         print(f"Has Image: {has_image}")
         print(f"Has Name: {has_name}")
-
-
-@when("I search for 'T shirt'")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: When I search for \'T shirt\'')
-
-
-@when("I search for 'T-shirt'")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: When I search for \'T-shirt\'')

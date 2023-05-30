@@ -1,5 +1,4 @@
-from selenium.webdriver.common.by import By
-from behave import when, then, given
+
 # Created by lubna khan at 5/15/2023
 
 Feature: Adding product to cart and verifying it

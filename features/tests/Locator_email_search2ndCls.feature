@@ -1,6 +1,6 @@
-# Created by lubna khan at 5/11/2023
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Test Scenarios for Search functionality
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: open amazon page
+    When: input continue button
+    When:  Click on search icon
+    Then: Product results are shown
