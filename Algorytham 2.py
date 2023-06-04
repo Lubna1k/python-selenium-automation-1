@@ -10,10 +10,8 @@ def split_and_swap(passed_string):
 
     return first_half + second_half
 
-
 user_input = "bbbbb_aaaaa"
-# print(split_and_swap(user_input))
-
+print(split_and_swap(user_input))
 
 def has_unique_characters(passed_text):
     encountered_chars = set()
@@ -24,5 +22,5 @@ def has_unique_characters(passed_text):
     return True
 
 
-user_text = 'abcde'
+user_text = 'ABCDE'
 print(has_unique_characters(user_text))
