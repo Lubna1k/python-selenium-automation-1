@@ -1,5 +1,5 @@
 import numbers
-user_input1 = input("Enter a number: ")
+user_input1 = input("Enter a number")
 
 
 def sum_of_digits(number):
