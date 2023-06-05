@@ -18,3 +18,11 @@ def input_search(context, search_word):
     search.clear()
     search.send_keys(search_word)
     sleep(4)
+
+
+@then('Verify "Your Shopping Cart is empty  text present')
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: Then Verify "Your Shopping Cart is empty  text present')

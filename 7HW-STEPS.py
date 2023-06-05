@@ -1,20 +1,20 @@
-import behave
+from page.models import Page
 from selenium.webdriver.common.by import By
-
-# CART_COUNT = (By.ID, 'nav-cart-count')
-# CART_EMPTY_MESSAGE = (By.XPATH, "//h2[contains(text(), 'Your Amazon Cart is empty')]")
-
-
-@behave.when('Click on cart icon')
-def open_cart_page(context):
-    #context.driver.get('https://www.amazon.com/gp/cart/view.html?ref_=nav_cart')
-    context.app.cart.click_cart_icon()
+# from selenium.webdriver.support import expected_conditions as EC
+#from pages.header import Page
 
 
-@behave.then('Verify "Your Shopping Cart is empty" text present')
-def verify_cart_verify_empty_text(context):
-    # empty_msg = context.driver.find_element(*CART_EMPTY_MESSAGE).text
-    # print(empty_msg)
-    context.app.cart.verify_empty()
+class Cart(Page):
+    CART_COUNT = (By.ID, 'nav-cart-count')
+    CART_EMPTY_MESSAGE = (By.XPATH, "//h2[contains(text(), 'Your Amazon Cart is empty')]")
 
-    assert context.app.cart.verify_empty() is True
+    def click_cart_icon(self):
+        self.click(*self.CART_COUNT)
+
+    def verify_empty(self):
+        found = self.find_element(*self.CART_EMPTY_MESSAGE)
+
+        if found is None:
+            return False
+        else:
+            return True
