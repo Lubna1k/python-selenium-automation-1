@@ -30,3 +30,4 @@ wsproto~=1.2.0
 tqdm~=4.65.0
 python-dotenv~=1.0.0
 page~=0.2
+pages~=0.3
