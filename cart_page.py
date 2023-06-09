@@ -1,8 +1,8 @@
 from behave import when, then
 from selenium.webdriver.common.by import By
 
-CART_COUNT = (By.ID, 'nav-cart-count')
-CART_EMPTY_MESSAGE = (By.XPATH, "//h2[contains(text(), 'Your Amazon Cart is empty')]")
+# CART_COUNT = (By.ID, 'nav-cart-count')
+# CART_EMPTY_MESSAGE = (By.XPATH, "//h2[contains(text(), 'Your Amazon Cart is empty')]")
 
 
 @when('Click on cart icon')
