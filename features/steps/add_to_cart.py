@@ -1,9 +1,7 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
-from common_steps import step_given_amazon_homepage, step_when_search_for, step_when_click_on_item, \
-    step_store_product_name
+
 
 PRODUCT = (By.CSS_SELECTOR, "img.s-image[src='https://m.media-amazon.com/images/I/81HTgYFwyfL._AC_UL400_.jpg']")
 ADD_TO_CART_BTN = (By.ID, "add-to-cart-button")
