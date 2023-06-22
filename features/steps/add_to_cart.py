@@ -18,6 +18,23 @@ def add_to_cart(context):
     ).click()
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @when("I click on 'Go to Cart' button")
 def go_to_cart(context):
     context.driver.wait.until(
