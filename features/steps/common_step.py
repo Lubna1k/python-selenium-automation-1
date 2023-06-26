@@ -1,12 +1,14 @@
 from behave import given, when
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC, wait
 
 SEARCH_BOX = (By.ID, "twotabsearchtextbox")
 PRODUCT_IMAGE = (By.CSS_SELECTOR, "div[data-index='3'] img")
 PRODUCT_NAME = (By.CSS_SELECTOR, "div[data-index='3'] h2")
 
 
-# Common step definitions
+#test  Common step definitions
 @given("I am on Amazon homepage")
 def step_given_amazon_homepage(context):
     context.app.home_page.open_home_page()

@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
 
-
+#test order page 7
 ORDERS_PAGE = (By.ID, "nav-orders")
 SIGNIN_TEXT = (By.XPATH, "//h1[@class='a-spacing-small']")
 
@@ -23,3 +23,11 @@ def open_orders_page(context):
 @then("The sign-in page is displayed")
 def verify_signin(context):
     context.app.base_page.verify_partial_text('Sign in', *SIGNIN_TEXT)
+
+
+@step("I click on 'Go to Cart' button")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    raise NotImplementedError(u'STEP: And I click on \'Go to Cart\' button')
