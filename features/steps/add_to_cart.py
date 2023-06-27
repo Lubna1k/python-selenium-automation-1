@@ -33,3 +33,11 @@ def verify_cart(context):
     #test   actual_result = context.driver.find_element(*ACTUAL_RESULT).text
     #test   assert expected_text == actual_result, f"Expected {expected_text} but got {actual_result}"
     context.app.base_page.verify_element_text('Shopping Cart', *ACTUAL_RESULT)
+
+
+def open_amazon():
+    return None
+
+
+def search_amazon():
+    return None
